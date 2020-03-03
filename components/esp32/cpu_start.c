@@ -438,7 +438,7 @@ void start_cpu0_default(void)
     coex_pre_init();
 #endif
 
-    bootloader_flash_update_id();
+    //bootloader_flash_update_id();
 #if !CONFIG_SPIRAM_BOOT_INIT
     // Read the application binary image header. This will also decrypt the header if the image is encrypted.
     esp_image_header_t fhdr = {0};
